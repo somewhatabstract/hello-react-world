@@ -12,5 +12,9 @@
     "editor.codeActionsOnSave": {
         "source.fixAll": true
     },
-    "jestTestExplorer.pathToJestConfig": "./jest.config.js"
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "jestTestExplorer.pathToJestConfig": "./jest.config.js",
+    "typescript.referencesCodeLens.enabled": true,
+    "prettier.configPath": "./.prettierrc.js",
+    "eslint.validate": ["typescript", "typescriptreact"]
 }

@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-undef
 module.exports = {
     presets: [
         [
@@ -7,6 +8,8 @@ module.exports = {
                 allExtensions: true,
             },
         ],
+        "@babel/preset-env",
+        "@babel/preset-react",
     ],
     plugins: [
         "@babel/proposal-class-properties",

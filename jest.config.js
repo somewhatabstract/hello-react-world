@@ -1,6 +1,7 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
+// eslint-disable-next-line no-undef
 module.exports = {
     testMatch: [
         "**/__tests__/**/*.[jt]s?(x)",
@@ -17,10 +18,11 @@ module.exports = {
     coverageDirectory: "coverage",
 
     // The test environment that will be used for testing
-    testEnvironment: "node",
+    testEnvironment: "jsdom-sixteen",
 
     // Setting this value to "fake" allows the use of fake timers for functions such as "setTimeout"
     timers: "fake",
 
-    setupFilesAfterEnv: ["jest-extended"],
+    // Need to setup enzyme and add some matchers.
+    setupFilesAfterEnv: ["./jest.setup.js", "jest-extended", "jest-enzyme"],
 };
