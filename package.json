@@ -8,7 +8,7 @@
     "test": "jest --colors --config jest.config.js",
     "coverage": "jest --colors --config jest.config.js --coverage",
     "lint": "tsc && eslint --report-unused-disable-directives --config eslint.config.js \"{src,bin,__{tests,mocks}__}/**/*.[jt]s\"",
-    "build:noclean": "babel src --out-dir dist --extensions \".ts\" --source-maps --config-file ./babel.config.js --ignore \"**/__tests__/**/*.ts\",\"**/__mocks__/**/*.ts\"",
+    "build:noclean": "babel src --out-dir dist --extensions \".ts\" --source-maps --config-file ./babel.config.js --ignore \"**/*.test.ts\",\"**/__mocks__/**/*.ts\"",
     "build": "npm run clean && npm run build:noclean",
     "pretty": "pretty-quick"
   },
