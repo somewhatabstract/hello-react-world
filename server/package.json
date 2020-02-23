@@ -1,0 +1,17 @@
+{
+  "name": "hello-react-world-ssr",
+  "version": "0.0.1",
+  "description": "A server-side rendering server",
+  "main": "index.js",
+  "repository": "git@github.com:somewhatabstract/hello-react-world-ssr.git",
+  "author": "Jeff Yates <jeff@somewhatabstract.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "scripts": {
+    "start": "node index.js"
+  }
+}
