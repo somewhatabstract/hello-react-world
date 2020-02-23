@@ -1,0 +1,16 @@
+{
+    "editor.renderWhitespace": "boundary",
+    "eslint.codeActionsOnSave.mode": "all",
+    "eslint.enable": true,
+    "files.trimTrailingWhitespace": true,
+    "typescript.format.enable": false,
+    "typescript.validate.enable": true,
+    "javascript.validate.enable": false,
+    "coverage-gutters.lcovname": "./coverage/lcov.info",
+    "jest.enableSnapshotUpdateMessages": true,
+    "jest.pathToConfig": "./jest.config.js",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    "jestTestExplorer.pathToJestConfig": "./jest.config.js"
+}

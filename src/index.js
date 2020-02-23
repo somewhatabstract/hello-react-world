@@ -1,3 +1,0 @@
-// The entry
-
-/** Nothing yet */
