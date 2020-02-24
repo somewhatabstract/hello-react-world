@@ -1,26 +1,14 @@
+require("./require-patches.js");
 const express = require("express");
 const React = require("react");
 const {renderToString} = require("react-dom/server");
+const {getPageTemplate} = require("./get-page-template.js");
+const App = require("../client/src/App.js").default;
 
 const port = 3000;
 const app = express();
 
-const pageTemplate = `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="description"
-      content="SSR result"
-    />
-    <title>React App</title>
-  </head>
-  <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-  </body>
-</html>
-`;
+const pageTemplate = getPageTemplate();
 
 const renderPage = (reactComponent) => {
     const renderedComponent = renderToString(reactComponent);
@@ -28,7 +16,7 @@ const renderPage = (reactComponent) => {
 };
 
 app.get("/*", (req, res) => res.send(
-    renderPage(React.createElement("div", {children: "Hello World!"})),
+    renderPage(<App />),
 ));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
