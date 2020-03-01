@@ -16,7 +16,7 @@ const renderPage = (reactComponent) => {
 };
 
 app.get("/*", (req, res) => res.send(
-    renderPage(<App />),
+    renderPage(<App ssrLocation={req.url} />),
 ));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));

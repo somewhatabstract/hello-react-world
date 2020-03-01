@@ -1,11 +1,13 @@
 import React from 'react';
-import {BrowserRouter, Link, Route, Switch} from "react-router-dom";
+import {Link, Route, Switch} from "react-router-dom";
+import Router from "./Router.js";
 import logo from './logo.svg';
 import './App.css';
 
-function App() {
+function App(props) {
+  const {ssrLocation} = props;
   return (
-    <BrowserRouter>
+    <Router ssrLocation={ssrLocation}>
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
@@ -29,7 +31,7 @@ function App() {
           </Switch>
         </section>
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 
