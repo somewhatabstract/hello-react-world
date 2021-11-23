@@ -1,7 +1,7 @@
 import React from 'react';
 import {Link, Route, Switch} from "react-router-dom";
 import Router from "./Router.js";
-import logo from './logo.svg';
+import SpinningLogo from "./SpinningLogo.js";
 import './App.css';
 
 function App(props) {
@@ -10,7 +10,7 @@ function App(props) {
     <Router ssrLocation={ssrLocation}>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+          <SpinningLogo />
           <div className="App-links">
             <Link className="App-link" to="/">Home</Link>
             <Link className="App-link" to="/about">About</Link>

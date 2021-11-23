@@ -1,8 +1,8 @@
 require("./require-patches.js");
 const http = require("http");
 const express = require("express");
-const React = require("react");
-const {renderToString} = require("react-dom/server");
+const React = require("../client/node_modules/react");
+const {renderToString} = require("../client/node_modules/react-dom/server");
 const getProductionPageTemplate = require("./get-production-page-template.js");
 const App = require("../client/src/App.js").default;
 

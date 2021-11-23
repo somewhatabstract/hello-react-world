@@ -8,8 +8,8 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "scripts": {
     "start:client": "yarn run --cwd=../client start",
@@ -17,11 +17,10 @@
     "start:prod": "NODE_ENV=production babel-watch index.js"
   },
   "devDependencies": {
-    "@babel/cli": "^7.8.4",
-    "@babel/core": "^7.8.4",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.8.4",
-    "@babel/preset-react": "^7.8.3",
-    "babel-watch": "^7.0.0"
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-react": "^7.16.0",
+    "babel-watch": "^7.6.0"
   }
 }
