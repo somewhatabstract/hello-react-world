@@ -8,8 +8,10 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
+    "jsdom": "16",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "render-gateway": "git+https://git@github.com/Khan/render-gateway.git#9d5b68f67b0feb8df8b063fae8029fe5bc834d51"
   },
   "scripts": {
     "start:client": "yarn run --cwd=../client start",
