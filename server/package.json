@@ -14,9 +14,10 @@
     "render-gateway": "git+https://git@github.com/Khan/render-gateway.git#9d5b68f67b0feb8df8b063fae8029fe5bc834d51"
   },
   "scripts": {
+    "build": "NODE_ENV=production babel *.js -d dist",
     "start:client": "yarn run --cwd=../client start",
     "start": "NODE_ENV=development babel-watch index.js",
-    "start:prod": "NODE_ENV=production babel-watch index.js"
+    "start:prod": "yarn build && NODE_ENV=production node dist/index.js"
   },
   "devDependencies": {
     "@babel/cli": "^7.16.0",
