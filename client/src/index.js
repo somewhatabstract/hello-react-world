@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import * as serviceWorker from './serviceWorker';
 
 if (typeof window !== "undefined" && typeof window["__jsdom_env_register"] === "function") {
     console.log("SERVER-SIDE RENDERING");
@@ -40,9 +39,4 @@ if (typeof window !== "undefined" && typeof window["__jsdom_env_register"] === "
         : ReactDOM.hydrate;
 
     reactMountFn(<App />, mountElement);
-
-    // If you want your app to work offline and load faster, you can change
-    // unregister() to register() below. Note this comes with some pitfalls.
-    // Learn more about service workers: https://bit.ly/CRA-PWA
-    serviceWorker.unregister();
 }
